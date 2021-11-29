@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --box-background: #0e1f55;
+  --app-background: #d9dff8;
+}
+.container {
+  background-color: var(--app-background);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  background-color: var(--box-background);
+  width: 350px;
+  padding: 25px;
+  border-radius: 30px;
+}
+.heading {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.lists .listitem {
+  color: #fff;
+  padding: 15px 0;
+  background-color: #12286c;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
