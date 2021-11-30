@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+::placeholder {
+  font-weight: 300;
+  opacity: 0.4;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 :root {
   --box-background: #0e1f55;
@@ -16,20 +24,70 @@
 }
 .box {
   background-color: var(--box-background);
-  width: 350px;
-  padding: 25px;
-  border-radius: 30px;
+  width: 300px;
+  height: 600px;
+  overflow: auto;
+  font-size: 20px;
+  min-height: 600px;
+  padding: 0px 30px;
+  border-radius: 40px;
+  position: relative;
 }
-.heading {
+.header {
+  position: sticky;
+  padding-top: 65px;
+  top: 0;
+  left: 0;
+  background-color: var(--box-background);
+}
+.heading h2 {
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 25px;
 }
 .lists .listitem {
-  color: #fff;
-  padding: 15px 0;
-  background-color: #12286c;
-  padding: 15px 10px;
+  color: #ccd4f0;
+  font-size: 14px;
+  padding: 8px 15px !important;
+  background-color: #192b62;
+  padding: 15px 20px;
   margin-bottom: 10px;
+  border-radius: 8px;
+  font-weight: 300;
+}
+.createlist {
+  position: relative;
+}
+.createlist input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 50px;
+  padding: 15px 20px;
   border-radius: 15px;
+  color: #232c50;
+  font-size: 15px;
+  background-color: #ccd4f0;
+}
+.side-head {
+  padding: 25px 0 10px;
+}
+.side-head p {
+  font-size: 13px;
+  color: #495376;
+}
+.createlist button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 17px;
+  color: #192b62;
+  background-color: #668af9;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  display: none;
 }
