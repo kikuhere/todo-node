@@ -16,30 +16,23 @@
             <div class="header">
                 <div class="heading">
                     <h2>Hey, Kiku</h2>
+                    <p><%= date %></p>
                 </div>
                 <div class="createlist">
                     <form action="/" method="post">
-                        <input type="text" placeholder="Enter task and press enter">
+                        <input type="text" name="list" placeholder="Enter task and press enter" autocomplete="off">
                         <button type="submit" value="">+</button>
                     </form>
                 </div>
+                <hr>
                 <div class="side-head">
                     <p>Your Todo lists</p>
                 </div>
             </div>
             <div class="lists">
-                <div class="listitem">First </div>
-                <div class="listitem">Second</div>
-                <div class="listitem">Third</div>
-                <div class="listitem">Third</div>
-                <div class="listitem">Third</div>
-                <div class="listitem">Third</div>
-                <div class="listitem">Third</div>
-                <div class="listitem">Third</div>
-                <div class="listitem">Third</div>
-                <div class="listitem">Third</div>
-                <div class="listitem">Third</div>
-                <div class="listitem">Third</div>
+                <% allLists.forEach(list=>{ %>
+                <div class="listitem"><%= list %></div>
+                <% }) %>
             </div>
         </div>
     </div>
