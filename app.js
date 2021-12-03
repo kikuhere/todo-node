@@ -11,7 +11,7 @@ const today = date.getDate();
 const lists = ["First", "Second", "Third"];
 
 app.get("/", (req, res) => {
-  res.render("list", { date: today, allLists: lists.reverse() });
+  res.render("list", { date: today, allLists: lists });
 });
 
 app.post("/", (req, res) => {
